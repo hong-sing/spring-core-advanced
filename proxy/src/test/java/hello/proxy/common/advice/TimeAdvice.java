@@ -15,7 +15,7 @@ public class TimeAdvice implements MethodInterceptor {
 
         long endTime = System.currentTimeMillis();
         long resulttime = endTime - startTime;
-        log.info("TimeProxy 종료 resultTime={}", resulttime);
+        log.info("TimeProxy 종료 resultTime={}ms", resulttime);
         return result;
     }
 }
